@@ -1,0 +1,786 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>世界史後期中間</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="12f2760b-9194-808f-b693-f4354aae8a9e" class="page sans"><header><h1 class="page-title">世界史後期中間</h1><p class="page-description"></p></header><div class="page-body"><h2 id="12f2760b-9194-8074-a969-fc794d736971" class="">No.1 アメリカ領土拡大と南北戦争</h2><ol type="1" id="12f2760b-9194-80e3-a9c9-d699c55b3948" class="numbered-list" start="1"><li><mark class="highlight-red"><mark class="highlight-default_background">居留地</mark></mark>へと強制移住、<mark class="highlight-red">人口激減</mark></li></ol><ol type="1" id="12f2760b-9194-8023-a6b7-d1eee1ea8de0" class="numbered-list" start="2"><li>奴隷制の可否<p id="12f2760b-9194-80d0-bb4e-d1eb305d42cf" class="">北部: 奴隷制<mark class="highlight-red">反対</mark>…人道主義的立場</p><p id="12f2760b-9194-80a4-8e3b-d484fce9208e" class="">南部: 継続<mark class="highlight-red">要求</mark>…プランテーション(綿花)で人手がほしい→議会での劣勢を警戒</p></li></ol><ol type="1" id="12f2760b-9194-801e-bd20-f30d2af2267a" class="numbered-list" start="3"><li>連合国(11州)</li></ol><ol type="1" id="12f2760b-9194-808e-9a14-d8c5b5f7e5e8" class="numbered-list" start="4"><li>①人口と工業力が強い<p id="12f2760b-9194-80b0-9c8b-d695644de0a9" class="">②1862年: ホームステッド法→西部の支持</p><p id="12f2760b-9194-80b3-845a-f0bcfb6027de" class="">③1863年: 奴隷<mark class="highlight-red">解放</mark>宣言→国際世論</p></li></ol><ol type="1" id="12f2760b-9194-80c7-b6e6-fabc6a560a6d" class="numbered-list" start="5"><li>市場の拡大、労働力の増強、多様性のある文化の醸成</li></ol><ol type="1" id="12f2760b-9194-8031-b2bc-faf6f2424c12" class="numbered-list" start="6"><li>19世紀の大統領の実績<ol type="a" id="12f2760b-9194-8085-af6f-d8137fe5f8ce" class="numbered-list" start="1"><li>5代 モンロー (外交)<p id="12f2760b-9194-80f8-b9e5-f8e3af3fb218" class="">南北アメリカ大陸・ヨーロッパ間の相互不干渉、<mark class="highlight-red">イギリスからの経済的な独立</mark>(モンロー宣言)</p></li></ol><ol type="a" id="12f2760b-9194-80a0-a412-d60fd8149339" class="numbered-list" start="2"><li>7代 ジャクソン (参政権・先住民政策)<ul id="3ed11fe1-b0df-4bb1-b90f-b7b83794d8d4" class="bulleted-list"><li style="list-style-type:disc">参政権拡大: 成人男性への普通選挙権を推進</li></ul><ul id="a7e55001-5272-4d79-90c4-c6cbaf178c00" class="bulleted-list"><li style="list-style-type:disc">先住民政策: 先住民の土地を安価に購入→白人入植者に売却(インディアン強制移住法)<ul id="12f2760b-9194-80f6-b179-ce4f7965b5ed" class="bulleted-list"><li style="list-style-type:circle">応じない<mark class="highlight-red">先住民を強制移住</mark></li></ul><ul id="12f2760b-9194-80b6-a1a0-fcaa5a8e8cf1" class="bulleted-list"><li style="list-style-type:circle">合衆国農地の拡大</li></ul></li></ul></li></ol><ol type="a" id="12f2760b-9194-8005-9d1e-f017482e4c73" class="numbered-list" start="3"><li>16代 リンカン (南北戦争) <p id="ec6475cd-5df2-45bd-8b11-80474aca5bfb" class="">・奴隷解放宣言（1863年）: 南部の奴隷制を廃止</p><p id="9a60ee9a-4607-4228-bbba-be2fc0922838" class="">・南北戦争の勝利（1865年）: 合衆国の<mark class="highlight-red">統一を維持</mark></p></li></ol></li></ol><h3 id="e46027ff-16fa-46a8-9abb-e6e8109684eb" class="">重要用語</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="2a70b905-b991-4e1c-88fc-e79c7585f4e4" class="code"><code class="language-XML">ルイジアナ購入(フランス)
+フロリダ購入(スペイン)
+米英戦争
+白人男性普通選挙
+ジャクソン大統領
+		合衆国政治の民主化
+		先住民の弾圧政策
+西漸運動
+		「明白なる運命」
+アメリカ=メキシコ戦争
+		ゴールドラッシュ
+ミズーリ協定
+		国土の中間線以南のみ奴隷制続行
+カンザス・ネブラスカ法・・・ミズーリ協定の破棄&amp;住民投票へ変更
+		反対勢力が共和党を発足
+1860,リンカンの大統領選勝利
+1861,南部地域→連合国
+南北戦争・・・アメリカ史上最多の死者
+ホームステッド法 ← 西部の支持
+奴隷解放宣言 ← 国際世論の支持
+1890s,フロンティア消滅宣言
+		西武:世界最大の農業生産力
+		東西を結ぶ大陸横断鉄道
+移民・・・市場の拡大、労働力、多様性のある文化</code></pre><p id="b06cd43b-3293-4f62-bb19-8377a1e2bbd9" class="">
+</p><h2 id="12f2760b-9194-80f9-87ad-ee8c770cdacf" class="">No.2, 3 第二次産業革命と帝国主義</h2><ol type="1" id="12f2760b-9194-80c1-a94b-c21b5bbdcd73" class="numbered-list" start="1"><li>資本家: 金融資本と少数の巨大企業の連携→市場の独占<p id="12f2760b-9194-8095-a698-cf70e2a1e233" class="">労働者: 近代科学や専門知識の要求→<mark class="highlight-red">近代教育</mark>の普及</p></li></ol><ol type="1" id="994b45cb-ece9-4f1e-98b2-3f4d2107ea1a" class="numbered-list" start="2"><li>アジア・アフリカ地域で帝国主義支配をどのように受けたか?<ol type="a" id="9cf0448f-dce2-48e4-98b2-8f739dfd6bb5" class="numbered-list" start="1"><li><mark class="highlight-default"><mark class="highlight-red_background">資源や労働力を収奪</mark></mark></li></ol><ol type="a" id="aea1998d-9079-488e-b139-d3a9195e8c12" class="numbered-list" start="2"><li><mark class="highlight-default"><mark class="highlight-red_background">伝統文化を破壊</mark></mark></li></ol><ol type="a" id="3db2c48d-9654-4cf5-b001-9063daf6acb1" class="numbered-list" start="3"><li><mark class="highlight-default"><mark class="highlight-red_background">経済・社会構造を改造</mark></mark></li></ol></li></ol><ol type="1" id="36be8711-6c95-453f-8710-0f313c7c1869" class="numbered-list" start="3"><li>インド(カルカッタ)・エジプト(カイロ)・南アフリカ(ケープタウン)を結ぶ勢力圏の構築</li></ol><ol type="1" id="08050b92-3624-45d7-817a-23e5e91b83f8" class="numbered-list" start="4"><li>ベルリン・ビザンティウム・バグダードを結ぶ勢力圏の構築<p id="f478f591-b912-4a83-be20-f17c233c87ee" class="">バグダード鉄道で南下+ペルシャ湾・インド洋に軍艦を配備</p></li></ol><ol type="1" id="78e31454-ef60-49ff-ad0b-e86af37396d7" class="numbered-list" start="5"><li>革新主義</li></ol><h3 id="4a46c3a3-89d2-4b3c-a67f-cc450a8f15c9" class="">重要用語</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="e4299cf3-fc53-4995-ad7a-622556db2d15" class="code"><code class="language-XML">動力源 石油や電気へ
+帝国主義 武力で植民地支配
+3C政策
+		保守党ディズレーリ:スエズ運河会社の株を取得→経営権の獲得
+		インド支配・連絡路確保
+南アフリカ戦争(1899〜1902)
+		ジョセフ=チェンバレンがケープ植民地拡張政策を引き継いだため
+アイルランド自治法
+フランス第三共和政
+		政教分離法
+ドイツ(ヴィルヘルム2世)
+		世界政策
+マッキンリー大統領
+中国門戸開放
+ウィルソン大統領
+		宣教師外交 アメリカ民主主義を教えてあげる()</code></pre><p id="a79da005-c6d7-4ef2-a26a-23cf8fa595a5" class="">
+</p><h2 id="bc170912-d9ab-44fc-a7b7-5783c039d818" class="">No.4, 5 第一次世界大戦とロシア革命</h2><ol type="1" id="f3ff9f82-6fd4-4b70-95b0-d66c1009806c" class="numbered-list" start="1"><li>バルカン半島の支配</li></ol><ol type="1" id="acb9cc50-e71d-4765-a518-87a917f2bf7e" class="numbered-list" start="2"><li><mark class="highlight-red">ボスニア・ヘルツェゴヴィナ</mark>のオーストリア併合に反発したため</li></ol><ol type="1" id="d9b68224-359f-491e-b5b1-8a1be74eee16" class="numbered-list" start="3"><li>マルヌの戦い</li></ol><ol type="1" id="4b5d05aa-d9d0-4d6a-987b-f8a1544e25e9" class="numbered-list" start="4"><li>秘密条約に基づき<mark class="highlight-red">秘密裏に土地の割譲</mark>について決める</li></ol><ol type="1" id="3a11709f-377e-4aee-81a9-45943270a03f" class="numbered-list" start="5"><li>一般市民も戦争のために動員される<ul id="95e13982-2de3-44e8-be95-81664e88b257" class="bulleted-list"><li style="list-style-type:disc">女性の労働</li></ul><ul id="d48583ed-f336-4515-976a-e0c171914707" class="bulleted-list"><li style="list-style-type:disc">植民地の現地人・・・兵士、労働者として</li></ul><p id="03bdf200-b021-4da8-8d28-2c1dfeb6398b" class="">政府の国民生活の統制</p><p id="15ee1e92-1efe-447b-b2b8-3705d290e152" class="">挙国一致体制</p></li></ol><ol type="1" id="39c58bca-2922-40ac-b037-e4e016f3dad4" class="numbered-list" start="6"><li>ドイツの無制限潜水艦作戦の実施により、自国船への攻撃が考えられたため</li></ol><ol type="1" id="7f39abc2-445d-472e-8742-e1f85a827198" class="numbered-list" start="7"><li>2回(二月革命、十月革命)</li></ol><ol type="1" id="3d53d047-e580-49bd-842a-adcda022e5ee" class="numbered-list" start="8"><li>対ソ干渉戦争</li></ol><ol type="1" id="a1b538ae-30f4-4715-8a0f-8ee8e15d91e7" class="numbered-list" start="9"><li>赤軍</li></ol><h3 id="1332760b-9194-8089-a022-db72e320ff8b" class="">重要用語</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1332760b-9194-801b-91ba-c55290ccf212" class="code"><code class="language-XML">パン=ゲルマン主義
+		優秀な人種であるゲルマン人が世界征服するべきだ。よってまずバルカン半島を征服しよう
+パン=スラヴ主義
+		スラヴ人はオスマン帝国から独立した国家で連合しゲルマン人のバルカン半島征服を阻止しよう
+		↑(ロシアの支援あり)
+バルカン同盟: セルビア・ブルガリア・モンテネグロ・ギリシア(ロシアの支援)
+第一次バルカン戦争: バルカン同盟でオスマン帝国に宣戦→勝利
+第二次バルカン戦争: 獲得領土の配分をめぐりブルガイアVS他のバルカン同盟
+WW1
+サライェヴォ事件
+三国同盟VS三国協商
+ドイツ、中立国ベルギーに侵攻
+秘密条約に基づく戦時外交
+アラブ人・ユダヤ人双方にオスマン帝国領内で国家建設を約束
+		フサイン・マクマホン協定
+新兵器:戦車・飛行機・毒ガス
+アメリカ:中立→協商国
+WW1後女性の参政権
+二月革命
+		ソヴィエトの反乱
+				皇帝ニコライ2世の退位→ロマノフ朝の滅亡
+				臨時政府:戦争を続行
+十月革命
+		レーニン帰国
+		トロツキーと11月に武装蜂起
+				平和に関する布告
+ブレスト=リトフスク条約→モスクワへ遷都
+共産党による一党独裁</code></pre><h2 id="e00aa8b1-fd15-4850-bcfa-48f308b33b67" class="">No.5, 6 1920年代ヴェルサイユ体制下の欧米諸国</h2><ol type="1" id="c6dc0d16-2617-4893-8bfd-6b5611d83694" class="numbered-list" start="1"><li>ヴェルサイユ体制、ワシントン体制</li></ol><ol type="1" id="c2c6580d-159a-48d3-b9df-8aa7de216de1" class="numbered-list" start="2"><li>十四か条の平和原則<ul id="50fb5158-a1d8-40c4-ae0f-bf849b32f97f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">民族自決</mark></li></ul><ul id="ddea80f8-e268-4ae6-97f0-89d51996ec4a" class="bulleted-list"><li style="list-style-type:disc">秘密外交の禁止</li></ul><ul id="311ec61e-3ef4-4bff-a2aa-73cb0039b96a" class="bulleted-list"><li style="list-style-type:disc">無併合</li></ul><ul id="ec28c4e7-6b6e-49ce-9506-f41a99951f80" class="bulleted-list"><li style="list-style-type:disc">無賠償</li></ul><ul id="4694ff05-ca93-4c08-9f11-c1c9b148a3af" class="bulleted-list"><li style="list-style-type:disc">国際的平和機構の設立</li></ul></li></ol><ol type="1" id="b1f39608-6e21-407c-afb9-85a39ae69925" class="numbered-list" start="3"><li>イタリア、ギリシア、ポーランド、フランスなど個別の紛争が多発、国際秩序の壊滅</li></ol><ol type="1" id="d8448aa0-38e1-4a9f-8403-439a74f045dc" class="numbered-list" start="4"><li>不況</li></ol><ol type="1" id="fdfec5b3-d8c3-475c-ab85-4960a4583b37" class="numbered-list" start="5"><li>戦債の返済</li></ol><ol type="1" id="1df66eea-f183-440e-ae66-a7d37a7be174" class="numbered-list" start="6"><li>ロカルノ条約</li></ol><ol type="1" id="4c3309af-eb40-4fd5-81a1-50beca39ef3c" class="numbered-list" start="7"><li><mark class="highlight-red">パクス・アメリカーナ</mark><p id="88027a23-e122-4011-be7e-55671ea7fcbc" class="">大量生産・大量消費・大衆文化</p></li></ol><h3 id="1302760b-9194-802b-a95e-f3d42b311828" class="">重要用語</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1332760b-9194-801e-a7be-e59b1d6a37a1" class="code"><code class="language-XML">ヴェルサイユ体制
+		ドイツの再興封じ込め、孤立化
+十四か条:ウィルソン大統領
+		一部「しか」実現せず
+アジア・アフリカ地域:戦勝国が新たな支配者
+旧オスマン領:移民当地支配
+イラク・トランスヨルダン・パレスチナ←イギリス支配
+ドイツ権益←日本支配
+国際連盟の限界
+		アメリカの不参加
+		敗戦国・ソヴィエトの排除
+		武力制裁不可
+		総会、全会一致の必要
+ワシントン体制
+		日本の台頭に対する牽制
+		アジア・太平洋地域での戦後の国際協調の秩序の確立
+イギリス マクドナルド
+		ウェストミンスター憲章の制定
+		イギリス帝国→イギリス連邦
+		アイルランド→エールとして事実上独立
+フランス
+		ベルギーと共にルール工業地帯を軍事占領
+ドイツ
+		エーベルト大統領:ヴァイマル憲法、ヴァイマル共和国
+		シュトレーゼマン首相:経済立て直し、アメリカ資本導入
+各国の紛争
+		イタリア
+		ギリシア
+		ポーランド
+		フランス
+ロカルノ条約
+パクス・アメリカーナ
+		債務国から債権国へ
+		孤立主義
+		大衆社会:大量生産・大量消費・大衆文化
+		移民法の成立</code></pre></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
